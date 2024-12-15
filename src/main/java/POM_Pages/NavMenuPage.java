@@ -20,7 +20,7 @@ public class NavMenuPage {
 
     By deleteAccountButton = By.xpath("//a[@href='/delete_account']");
 
-    By displayedUserNameIcon = By.xpath("//li/a/b[text()='TestName']");
+    By displayedUserNameIcon = By.xpath("//li/a/b");
 
     public NavMenuPage ValidateHomePageLoaded() {
         Assert.assertTrue(driver.findElement(logoImage).isDisplayed(), "Logo not displayed.");
